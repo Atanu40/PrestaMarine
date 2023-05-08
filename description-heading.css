@@ -1,0 +1,19 @@
+.description-section{
+    margin: 25px 0px ;
+}
+.des-sec-heading{
+    text-align: left;
+}
+.des-sec-heading-main{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--heading-txt-secondary-color);
+}
+.des-sec-para-main{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--primary-txt-color);
+    margin:20px 0px;
+}

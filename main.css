@@ -1,0 +1,40 @@
+@import url("slider.css");
+@import url("font.css");
+@import url("description-heading.css");
+@import url("submission-section.css");
+@import url("owl-slider-section.css");
+@import url("search-car-photo.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --border-line: 0.5px solid rgba(199, 199, 199, 0.5);
+    --btn-primary-color:#EA0029;
+    --heading-txt-color:#EA0029;
+    --heading-txt-secondary-color:#464646;
+    --primary-txt-color:#464646
+    --facet-filters__sort:#34321C;
+    --dark-bg-color:#161515;
+    --coll-bg-color:#231D17;
+    --btn-primary-color-hover:rgba(157, 135, 79, 0.7);
+  }
+  
+  html{
+    scroll-padding-top: 280px;
+    scroll-behavior: smooth;
+  }
+
+.page-width1 {
+    max-width: 4924px;
+    margin: auto;
+    padding-inline: 5%;
+}
+.page-width2 {
+    max-width: 1024px;
+    margin: auto;
+    padding-inline: 5%;
+}
