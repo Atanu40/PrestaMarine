@@ -21,7 +21,8 @@ function display_actionn(){
     var slider = document.querySelectorAll(".mySwiper2 .up-sld");
 
     slider.forEach((el, index) => {
-        // console.log(el)
+        console.log(el)
+        console.log(index);
         el.classList.remove("sld-nxt");
         
         if(el.classList.contains("swiper-slide-next")){ 
