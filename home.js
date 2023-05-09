@@ -4,35 +4,63 @@ var swiper = new Swiper(".mySwiper", {
     freeMode: true,
     watchSlidesProgress: true,
 });
-var swiper2 = new Swiper(".mySwiper2", {
-    spaceBetween: 10,
-    slidesPerView: 3,
+// var swiper2 = new Swiper(".mySwiper2", {
+//     spaceBetween: 10,
+//     slidesPerView: 3,
+//     watchSlidesProgress: true,
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+//     thumbs: {
+//         swiper: swiper,
+//     },
+// });
+
+
+var TrandingSlider = new Swiper('.tranding-slider', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
     watchSlidesProgress: true,
+    loop: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2.5,
+    },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     thumbs: {
         swiper: swiper,
     },
-});
+  });
 
-function display_actionn(){
-    var slider = document.querySelectorAll(".mySwiper2 .up-sld");
 
-    slider.forEach((el, index) => {
-        console.log(el)
-        console.log(index);
-        el.classList.remove("sld-nxt");
+
+// function display_actionn(){
+//     var slider = document.querySelectorAll(".mySwiper2 .up-sld");
+
+//     slider.forEach((el, index) => {
+//         console.log(el)
+//         console.log(index);
+//         el.classList.remove("sld-nxt");
         
-        if(el.classList.contains("swiper-slide-next")){ 
-            el.classList.add("sld-nxt");
-            //add 'ggez' to the next next slide
-            if(index+1 < slider.length){
-                slider[index+2].classList.add("sld-nxt-nxt");
-                slider[index+1].classList.remove("sld-nxt-nxt");
-            }
-        }
-    });
-}
+//         if(el.classList.contains("swiper-slide-next")){ 
+//             el.classList.add("sld-nxt");
+        
+//             //add 'ggez' to the next next slide
+//             if(index+1< slider.length){
+//                 slider[index+2].classList.add("sld-nxt-nxt");
+//                 slider[index+2].classList.add("sld-act");
+//                 slider[index+1].classList.remove("sld-nxt-nxt");
+//             }
+//         }
+
+//     });
+// }
 // display_actionn()
